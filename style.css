@@ -21,7 +21,7 @@ header {
     background: #333;
     color: #fff;
     padding: 10px 20px;
-    position: sticky;
+    position: flex;
     top: 0;
     z-index: 10;
     width: 100%;
@@ -67,7 +67,10 @@ nav ul li a:hover {
 .profile-pic-container {
     flex: 0 0 auto;
     margin-right: 20px;
+    position: relative;
 }
+
+
 
 .profile-pic {
     position: relative;
@@ -79,7 +82,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
     border: 3px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
+
 
 @keyframes wave {
     0%, 100% {
@@ -194,6 +199,7 @@ footer {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+
     background-size: cover;
 }
 
@@ -324,3 +330,70 @@ footer {
     }
 }
 
+
+
+.wave {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    border-radius: 50%;
+    background: rgba(118, 199, 192, 0.5);
+    animation: wave-small 3s infinite ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@keyframes wave-small {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .wave {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .contact-button {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .sparkles {
+        width: 70px;
+        height: 70px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
