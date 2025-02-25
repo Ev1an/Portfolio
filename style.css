@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: cer;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Contenedor de la foto de perfil con ondas animadas */
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+/* Contenedor de la foto de perfil con ondas animadas */
+.profile-pic-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.profile-pic {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.wave {
+    position: absolute;
+    top: 40%;
+    left: 49.4%;
+    width: 300px;
+    height: 300px;
+    margin: -150px 0 0 -150px;
+    border-radius: 50%;
+    background: rgba(118, 199, 192, 0.5);
+    animation: wave 3s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 2s;
+}
+
+
+.profile-info {
+    flex: 1 1 auto;
+    text-align: left;
+    max-width: 500px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    align-self: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.badge {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    position: relative;
+}
+
+.progress {
+    background: #4dfd6bd5;
+    color: #fff;
+    padding: 5px;
+    text-align: right;
+    border-radius: 10px;
+    width: 0;
+    animation: progress-animation 2s ease-in-out forwards;
+}
+
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--progress-width);
+    }
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Fondo animado con nebulosa */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: url('https://i.imgur.com/t8BZgUO.jpg') no-repeat center center fixed; /* URL de una imagen de nebulosa */
+    background-size: cover;
+}
+
+
+.stars {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        500px 2000px #fff,
+        1000px 1800px #fff,
+        1500px 1600px #fff,
+        2000px 1400px #fff,
+        2500px 1200px #fff,
+        300px 1000px #fff,
+        700px 800px #fff,
+        100px 600px #fff,
+        1500px 400px #fff,
+        200px 200px #fff,
+        2500px 1800px #fff,
+        300px 1600px #fff,
+        1000px 1400px #fff,
+        500px 1200px #fff,
+        250px 1950px #fff,
+        750px 1750px #fff,
+        1250px 1550px #fff,
+        1750px 1350px #fff,
+        2250px 1150px #fff,
+        2750px 950px #fff,
+        3250px 750px #fff,
+        3750px 550px #fff,
+        4250px 350px #fff,
+        4750px 150px #fff;
+    animation: animStar 50s linear infinite;
+}
+
+.stars::after {
+    content: " ";
+    position: absolute;
+    top: 1000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        500px 2000px #fff,
+        1000px 1800px #fff,
+        1500px 1600px #fff,
+        2000px 1400px #fff,
+        2500px 1200px #fff,
+        300px 1000px #fff,
+        700px 800px #fff,
+        100px 600px #fff,
+        1500px 400px #fff,
+        200px 200px #fff,
+        2500px 1800px #fff,
+        300px 1600px #fff,
+        1000px 1400px #fff,
+        500px 1200px #fff;
+    animation: animStar 50s linear infinite;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+/* Estilo para los botones de contacto */
+.contact-button {
+    display: block;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #76c7c0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Animación al pasar el ratón sobre los botones */
+.contact-button:hover {
+    background-color: #5fa9a3;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación al presionar los botones */
+.contact-button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de contacto */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Animación de destellos */
+.sparkles {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: sparkle-animation 2s infinite ease-in-out;
+    margin-left: 20px;
+}
+
+@keyframes sparkle-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.7);
+    }
+}
+
