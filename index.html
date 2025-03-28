@@ -3,235 +3,791 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Evian Fernández</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- SEO meta tags -->
+    <title>Evian Fernández | Desarrollador Web Frontend</title>
+    <meta name="description" content="Desarrollador web frontend especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores">
+    <meta name="keywords" content="desarrollador web, frontend, HTML, CSS, JavaScript, React, Latinoamérica">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="icon/favicon.ico" sizes="any">
+    <link rel="icon" href="icon/logo-evian-bg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+    <link rel="manifest" href="icon/site.webmanifest">
 
-    <!-- Otras etiquetas del head -->
-    <link rel="icon" href="ruta/a/tu/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Portafolio de Evian Fernandez, programador con experiencia en HTML, CSS, JavaScript y C++">
-    <meta name="keywords" content="Evian Fernandez, Programador, HTML, CSS, JavaScript, C++">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</head>
-<body>
+<!-- Meta tags SEO mejorados -->
+<meta name="author" content="Evian Fernández (Ev1an)">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 days">
+<link rel="canonical" href="https://ev1an.github.io" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ev1an.github.io">
+<meta property="og:title" content="Evian Fernández (Ev1an) | Desarrollador Web Frontend">
+<meta property="og:description" content="Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores">
+<meta property="og:image" content="https://ev1an.github.io/img/Foto.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://ev1an.github.io">
+<meta property="twitter:title" content="Evian Fernández (Ev1an) | Desarrollador Web Frontend">
+<meta property="twitter:description" content="Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos">
+<meta property="twitter:image" content="https://ev1an.github.io/img/Foto.jpg">
+
+<!-- Schema.org para Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Evian Fernández",
+  "alternateName": "Ev1an",
+  "jobTitle": "Desarrollador Web Frontend",
+  "url": "https://ev1an.github.io",
+  "sameAs": [
+    "https://github.com/Ev1an",
+    "https://www.instagram.com/evianfernandez7"
+  ],
+  "description": "Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores",
+  "image": "https://ev1an.github.io/img/Foto.jpg"
+}
+</script>
+
+</script>
 
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#aprendizajes">Aprendizajes</a></li>
-                <li><a href="#contacto">Contactáme</a></li>
-                <li><a href="https://github.com/Ev1an">GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <!-- Sección de Información Personal -->
-        <section id="info">
-            <div class="profile-container">
-                <div class="profile-pic-container">
-                    <img src="img/Foto.jpg" alt="Evian Fernández" class="profile-pic">
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                </div>
-                <div class="profile-info">
-                    <h1>Evian Fernández</h1>
-                    <p>Programador con experiencia en HTML, CSS, JavaScript y C++</p>
-                    <p>Hola! Soy Evian un programador junior especializado en el desarrollo frontend , puede contar conmigo para sus necesidades en la web 👨‍💻 </p>
-                    <br>
-                    <p>🤓 🧠 Embrace the mantra: "Your essence is defined by what you cherish". 🌟</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Sección de Habilidades -->
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div class="skill">
-                <img src="https://img.icons8.com/color/50/000000/html-5.png" alt="HTML Badge" class="badge">
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 88%;">HTML - 88%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <img src="https://img.icons8.com/color/50/000000/css3.png" alt="CSS Badge" class="badge">
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 74%;">CSS - 74%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <img src="https://img.icons8.com/color/50/000000/javascript.png" alt="JavaScript Badge" class="badge">
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 78%;">JavaScript - 78%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <img src="https://img.icons8.com/color/50/000000/c-plus-plus-logo.png" alt="C++ Badge" class="badge">
-                <div class="progress-bar">
-                    <div class="progress" style="--progress-width: 60%;">C++ - 60%</div>
-                </div>
-               
-            </div>
-            <br>
-            <p>Hablo semi-fluido el inglés y tengo conocimiento sobre el idioma 🎓</p>
-        </section>
-
-        <!-- Sección de Proyectos Personales -->
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Aquí puedes ver mis proyectos personales en desarrollo y los que ya he completado. Estoy constantemente aprendiendo y mejorando mis habilidades.</p>
-           
-            <br><p></p>
-            <hr>
-    
-            <section id="proyectos" class="projects-section">
-                <h2 style="color: #555;">Proyectos</h2>
-                <p>Aquí puedes ver mis proyectos personales en desarrollo y los que ya he completado. Estoy constantemente aprendiendo y mejorando mis habilidades.</p>
-                
-                <div class="project-card">
-                    <img src="img/Captura_novel_visual.png" alt="Captura de pantalla del proyecto" class="project-image">
-                    <div class="project-info">
-                        <h3>Novela Visual : Web v0.01</h3>
-                        <p>Típica novela visual con fines de ocio , crear una novela visual web ha sido todo 
-                            un reto para mi, motivación y meta personal el terminarla [Descripción en GitHub]👨‍💻👾.</p>
-                        <a href="https://ev1an.github.io/Visual-Novel/" class="github-button">Ver en GitHub</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="img/Captura_blog.png" alt="Captura de pantalla del proyecto" class="project-image">
-                    <div class="project-info">
-                        <h3>Blog del Escritor : Web v0.01</h3>
-                        <p>Blog dónde el autor puede expresarse a través de sus creaciones literarias 
-                            con un blog propio 😊 [Descripción en GitHub]👨‍💻👾.</p>
-                        <a href="https://ev1an.github.io/Blog-del-Escritor-/" class="github-button">Ver en GitHub</a>
-                    </div>
-                </div>
-                
-        </section>
-        
-        <!-- Sección de Aprendizajes y Cursos -->
-        <section id="aprendizajes">
-            <h2>Aprendizajes y Cursos</h2>
-            <ul>
-                <li>Curso de Desarrollo Web en <a href="https://lenguajehtml.com/">LenguajeHtml.com</a></li>
-                <li>Tutoriales de JavaScript en <a href="https://lenguajejs.com/javascript/">LenguajeJs.com</a></li>
-                <li>Curso de C++ en [Programacion con ATS (youtube)] </li>
-            </ul>
-        </section>
-
-        <!-- Sección de Contacto -->
-        <section id="contacto">
-            <h2>Contactáme</h2>
-            <div class="contact-container">
-                <div>
-                    <p><a href="https://wa.me/+53 56595366" class="contact-button"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">WhatsApp</a></p>
-                    <p><a href="mailto:kkuroba588@gmail.com" class="contact-button"><img src="https://img.icons8.com/ios-filled/50/ffffff/gmail.png" alt="Gmail">Gmail</a></p>
-                    <p><a href="https://github.com/Ev1an" class="contact-button"><img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">GitHub</a></p>
-                </div>
-                <div class="sparkles"></div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Evian Fernández</p>
-    </footer>
-
-    <!-- Fondo con animación -->
-    <div class="background-animation">
-        <div class="stars"></div>
-    </div>
-
-    <style>
-        .projects-section {
-            background-color: #f7f7f7;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+   <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    animation: {
+                        'wave': 'wave 3s infinite ease-in-out',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        wave: {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.5)', opacity: '0' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        }
+                    }
+                }
+            }
         }
-        
-        .projects-section h2 {
-            color: #333;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            margin-bottom: 20px;
-        }
-        
-        .projects-section p {
-            color: #555;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            margin-bottom: 40px;
-        }
-        
-        .project-card {
-            display: flex;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+    </script>
+    <style type="text/css">
+        .custom-shape-divider-bottom-1687542608 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             overflow: hidden;
-            transition: transform 0.2s ease-in-out;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1687542608 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .custom-shape-divider-bottom-1687542608 .shape-fill {
+            fill: #3B82F6;
         }
         
-        .project-card:hover {
+        .project-card:hover .project-image {
             transform: scale(1.05);
         }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">Evian<span class="text-secondary">Dev</span></a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#proyectos" class="font-medium hover:text-primary transition">Proyectos</a>
+                <a href="#habilidades" class="font-medium hover:text-primary transition">Habilidades</a>
+                <a href="#sobre-mi" class="font-medium hover:text-primary transition">Sobre mí</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition">Contacto</a>
+            </nav>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-dark"></i>
+            </button>
+        </div>
+    </header>
+
+  <!-- Hero Section con diseño original y botones que funcionan -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-r from-primary to-secondary">
+    <div class="custom-shape-divider-bottom-1687542608">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 flex justify-center mb-10 md:mb-0">
+            <div class="relative w-64 h-64 md:w-80 md:h-80">
+                <img src="img/Foto.jpg" alt="Evian Fernández" class="rounded-full w-full h-full object-cover border-4 border-white shadow-xl z-10 relative">
+                <div class="absolute inset-0 rounded-full bg-primary opacity-20 animate-wave"></div>
+                <div class="absolute inset-0 rounded-full bg-primary opacity-20 animate-wave" style="animation-delay: 1s"></div>
+                <div class="absolute inset-0 rounded-full bg-primary opacity-20 animate-wave" style="animation-delay: 2s"></div>
+            </div>
+        </div>
         
-        .project-image {
-            width: 40%;
-            object-fit: cover;
-        }
+        <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Evian Fernández</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6">Desarrollador Web Frontend</h2>
+            <p class="text-xl text-white mb-8">Creo sitios web rápidos, modernos y atractivos que ayudan a pequeñas empresas a destacar en línea.</p>
+            
+            <!-- Botones con solución definitiva pero diseño original -->
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contacto" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg active:scale-95 transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary block text-center"
+                   onclick="event.preventDefault(); document.querySelector('#contacto').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">
+                    Contrátame
+                </a>
+                <a href="#proyectos" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition active:scale-95 transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary block text-center"
+                   onclick="event.preventDefault(); document.querySelector('#proyectos').scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">
+                    Ver Proyectos
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Sobre Mí</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Apasionado por crear soluciones digitales que generan impacto real</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <p class="text-lg text-gray-700 mb-6">¡Hola! Soy Evian, un desarrollador web frontend con sede en Latinoamérica. Me especializo en construir sitios web modernos y optimizados que ayudan a negocios y emprendedores a establecer su presencia en línea.</p>
+                    <p class="text-lg text-gray-700 mb-6">Con conocimientos en HTML, CSS, JavaScript y experiencia práctica en proyectos reales, puedo ayudarte a llevar tu idea a la web con un enfoque en rendimiento, diseño atractivo y experiencia de usuario.</p>
+                    <p class="text-lg text-gray-700 mb-8">Trabajo con metodologías ágiles y me mantengo constantemente actualizado con las últimas tendencias en desarrollo web para ofrecer soluciones de calidad.</p>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-sm font-medium text-gray-500">Idiomas:</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Español (Nativo)</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Inglés (Intermedio)</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-gray-100 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-dark mb-6">Mis Servicios</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg text-primary mr-4">
+                                <i class="fas fa-laptop-code text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-2">Desarrollo Web Personalizado</h4>
+                                <p class="text-gray-600">Sitios web a medida diseñados para tus necesidades específicas con las últimas tecnologías frontend.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-secondary bg-opacity-10 p-3 rounded-lg text-secondary mr-4">
+                                <i class="fas fa-mobile-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-2">Diseño Responsivo</h4>
+                                <p class="text-gray-600">Webs que se adaptan perfectamente a cualquier dispositivo, desde móviles hasta pantallas grandes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-purple-100 p-3 rounded-lg text-purple-600 mr-4">
+                                <i class="fas fa-tachometer-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-2">Optimización de Rendimiento</h4>
+                                <p class="text-gray-600">Sitios rápidos que mejoran la experiencia de usuario y el posicionamiento en buscadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Servicios -->
+<section id="servicios" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Mis Servicios</h2>
+            <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+            <p class="max-w-2xl mx-auto text-lg text-gray-600">Soluciones personalizadas para hacer crecer tu presencia digital</p>
+        </div>
         
-        .project-info {
-            padding: 20px;
-            font-family: 'Arial', sans-serif;
-        }
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition group">
+                <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition">
+                    <i class="fas fa-laptop-code text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Landing Pages</h3>
+                <p class="text-gray-600 mb-4">Diseño y desarrollo de páginas de alto impacto que convierten visitantes en clientes.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Diseño 100% responsivo
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Optimizadas para SEO
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Integración con redes sociales
+                    </li>
+                </ul>
+                <div class="pro-tip bg-blue-50 p-3 rounded-lg border-l-4 border-primary">
+                    <p class="text-sm italic">"Incluyo siempre pruebas A/B en mis diseños para maximizar tu tasa de conversión"</p>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition group">
+                <div class="bg-purple-100 w-14 h-14 rounded-lg flex items-center justify-center text-purple-600 mb-6 group-hover:bg-purple-600 group-hover:text-white transition">
+                    <i class="fas fa-mobile-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Sitios Web Básicos</h3>
+                <p class="text-gray-600 mb-4">Presencia profesional en internet con sitios rápidos y fáciles de gestionar.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        3-5 páginas estáticas
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Adaptado a móviles
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Formulario de contacto
+                    </li>
+                </ul>
+                <div class="pro-tip bg-purple-50 p-3 rounded-lg border-l-4 border-purple-600">
+                    <p class="text-sm italic">"Uso tecnologías modernas como Tailwind CSS para que tu sitio cargue en menos de 2 segundos"</p>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition group">
+                <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition">
+                    <i class="fas fa-paint-brush text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-dark mb-3">Rediseño Web</h3>
+                <p class="text-gray-600 mb-4">Modernización de sitios existentes para mejorar experiencia y rendimiento.</p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Auditoría técnica previa
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Mejora de velocidad
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check-circle text-secondary mr-2"></i>
+                        Diseño actualizado
+                    </li>
+                </ul>
+                <div class="pro-tip bg-green-50 p-3 rounded-lg border-l-4 border-green-600">
+                    <p class="text-sm italic">"Analizo el comportamiento de usuarios con Hotjar para tomar decisiones de diseño basadas en datos"</p>
+                </div>
+            </div>
+        </div>
         
-        .project-info h3 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        
-        .project-info p {
-            color: #555;
-            margin-bottom: 20px;
-        }
-        
-        .github-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
-        }
-        
-        .github-button:hover {
-            background-color: #555;
-        }
-        </style>
-        <script>
-              swal({
-                        title:"Hola!",
-                        text: "Espero que pase una buena experiencia explorando mi perfil como programador  😊.",
-                        icon:"info",
-                        button:{
-                            confirm:{
-                                text:"Iniciar",
-                                value: true,
-                                visible:true,
-                                className: "btn-confirm",
-                                closeModal: true
-                            }
-                        } 
+        <!-- CTA -->
+        <div class="text-center mt-16 bg-white p-8 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold text-dark mb-4">¿Necesitas algo diferente?</h3>
+            <p class="text-gray-600 mb-6 max-w-2xl mx-auto">Cuéntame sobre tu proyecto y trabajemos juntos para hacerlo realidad.</p>
+            <a href="#contacto" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg">Hablemos</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Mis Habilidades</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Tecnologías que domino y utilizo regularmente en mis proyectos</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">HTML5</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Maquetación semántica y accesible, estructuración de contenido web.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 88%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">88%</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">CSS3</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Estilos avanzados, animaciones, Flexbox, Grid y diseño responsivo.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 74%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">74%</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">JavaScript</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Interactividad, manipulación del DOM, ES6+ y fundamentos sólidos.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 78%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">78%</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" alt="Tailwind CSS" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">Tailwind CSS</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Framework CSS utility-first para desarrollo rápido y consistente.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">85%</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">Git</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Control de versiones, GitHub, flujo de trabajo colaborativo.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">70%</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++" class="w-12 h-12 mr-4">
+                        <h3 class="text-xl font-semibold text-dark">C++</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Fundamentos de programación, lógica y estructuras de datos.</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                    <span class="text-sm text-gray-500 mt-1 block text-right">60%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Proyectos -->
+       <section id="proyectos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Mis Proyectos</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Algunos de mis trabajos recientes y proyectos personales</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 - Tienda Online Minimalista -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="overflow-hidden relative group">
+                        <!-- Carrusel de imágenes -->
+                        <div class="carousel relative h-48">
+                            <img src="img/MinimalistShop-Inicio.png" alt="Tienda Minimalista - Vista principal" 
+                                class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-100">
+                            <img src="img/MinimalistShop-Down.png" alt="Tienda Minimalista - Vista de productos" 
+                                class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        </div>
+                        
+                        <!-- Botones de navegación -->
+                        <button class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white px-2 py-1 rounded-full hover:bg-gray-900 transition opacity-0 group-hover:opacity-100 focus:opacity-100" 
+                                aria-label="Imagen anterior">
+                            ◀
+                        </button>
+                        <button class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white px-2 py-1 rounded-full hover:bg-gray-900 transition opacity-0 group-hover:opacity-100 focus:opacity-100" 
+                                aria-label="Imagen siguiente">
+                            ▶
+                        </button>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Tienda Online Minimalista</h3>
+                        <div class="pro-tip bg-blue-50 p-4 rounded-lg my-4">
+                            <h4 class="font-bold flex items-center">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                                Consejo Profesional
+                            </h4>
+                            <p class="italic">"Implementé un sistema de cache local para el carrito, permitiendo a los usuarios no perder sus productos incluso sin conexión, aumentando la retención en un 15% según tests A/B"</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://ev1an.github.io/Minimalist-Shop/" target="_blank" 
+                               class="flex-1 bg-primary text-white py-2 px-4 rounded-lg text-center font-medium hover:bg-blue-700 transition">
+                                Ver Demo
+                            </a>
+                            <a href="https://github.com/Ev1an/Minimalist-Shop" target="_blank" 
+                               class="flex-1 border border-gray-300 py-2 px-4 rounded-lg text-center font-medium hover:bg-gray-100 transition">
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Landing Page -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="overflow-hidden relative group">
+                        <!-- Carrusel de imágenes -->
+                        <div class="carousel relative h-48">
+                            <img src="img/Landing-Page.png" alt="Landing Page - Diseño principal" 
+                                class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-100">
+                            <img src="img/Landing-Page2.png" alt="Landing Page - Sección de características" 
+                                class="carousel-image absolute w-full h-full object-cover transition-opacity duration-500 opacity-0">
+                        </div>
+                        
+                        <!-- Botones de navegación -->
+                        <button class="carousel-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white px-2 py-1 rounded-full hover:bg-gray-900 transition opacity-0 group-hover:opacity-100 focus:opacity-100" 
+                                aria-label="Imagen anterior">
+                            ◀
+                        </button>
+                        <button class="carousel-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white px-2 py-1 rounded-full hover:bg-gray-900 transition opacity-0 group-hover:opacity-100 focus:opacity-100" 
+                                aria-label="Imagen siguiente">
+                            ▶
+                        </button>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Landing Page de Alto Impacto</h3>
+                        <div class="pro-tip bg-blue-50 p-4 rounded-lg my-4">
+                            <h4 class="font-bold flex items-center">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                                Consejo Profesional
+                            </h4>
+                            <p class="italic">"Combiné diseño limpio, psicología del color y CTA estratégicos para crear una landing page con alta tasa de conversión."</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">HTML5</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">CSS3</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://ev1an.github.io/LandingPage/" target="_blank" 
+                               class="flex-1 bg-primary text-white py-2 px-4 rounded-lg text-center font-medium hover:bg-blue-700 transition">
+                                Ver Demo
+                            </a>
+                            <a href="https://github.com/Ev1an/LandingPage" target="_blank" 
+                               class="flex-1 border border-gray-300 py-2 px-4 rounded-lg text-center font-medium hover:bg-gray-100 transition">
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Espacio para más proyectos -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center border-2 border-dashed border-gray-300 hover:border-primary transition">
+                    <i class="fas fa-plus-circle text-4xl text-gray-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-600 mb-2">Próximamente</h3>
+                    <p class="text-gray-500">Estoy trabajando en nuevos proyectos emocionantes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios (puedes agregar cuando tengas clientes) -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Clientes Satisfechos</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600">Lo que dicen quienes han trabajado conmigo</p>
+            </div>
+            
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Cliente 1 -->
+    <div class="bg-white p-8 rounded-xl shadow-md">
+        <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                <img src="img/Alvaro_Cliente1.jpg" alt="Cliente Satisfecho" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h4 class="font-semibold text-dark">Álvaro Domínguez</h4>
+                <p class="text-gray-500 text-sm">Dueño de Negocio | Piercings</p>
+            </div>
+        </div>
+        <p class="text-gray-600 italic">El trabajo de Evian me ha sido de mucha ayuda para mi negocio porque mis clientes ahora tienen más comodidad y confianza con mi negocio 10/10 sus servicios.</p>
+        <div class="flex mt-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         
+        </div>
+    </div>
+    
+    <!-- Cliente 2 -->
+    <div class="bg-white p-8 rounded-xl shadow-md">
+        <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                <img src="img/Dante_Cliente2.jpg" alt="Cliente Satisfecho" class="w-full h-full object-cover">
+            </div>
+            <div>
+                <h4 class="font-semibold text-dark">Dante Durán</h4>
+                <p class="text-gray-500 text-sm">Blogger | Escritor</p>
+            </div>
+        </div>
+        <p class="text-gray-600 italic">Se la rifó el programador, muy buen servicio.</p>
+        <div class="flex mt-4 text-yellow-400">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+</div>
+              
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Trabajemos Juntos</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto text-lg text-white opacity-90">¿Tienes un proyecto en mente? Contáctame y hagámoslo realidad</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden shadow-2xl">
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Envíame un Mensaje</h3>
+                    <form action="https://formspree.io/f/mvgkqrgd" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Cuéntame sobre tu proyecto"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 bg-gray-50 p-8 md:p-12 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-dark mb-6">Información de Contacto</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-lg text-primary mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-1">Correo Electrónico</h4>
+                                <a href="mailto:kkuroba588@gmail.com" class="text-gray-600 hover:text-primary transition">kkuroba588@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg text-green-600 mr-4">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-1">WhatsApp</h4>
+                                <a href="https://wa.me/+5356595366" target="_blank" class="text-gray-600 hover:text-primary transition">+53 56595366</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gray-200 p-3 rounded-lg text-gray-600 mr-4">
+                                <i class="fab fa-github text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-dark mb-1">GitHub</h4>
+                                <a href="https://github.com/Ev1an" target="_blank" class="text-gray-600 hover:text-primary transition">github.com/Ev1an</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="text-lg font-semibold text-dark mb-4">Sígueme en Redes</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/kaito-kuroba-404497342" class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-primary hover:text-white transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/evianfernandez7?igsh=aGlmc2c5cTc2c2w5" class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-pink-600 hover:text-white transition">
+                                <i class="fab fa-instagram"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-8 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">Evian<span class="text-secondary">Dev</span></a>
+                    <p class="mt-2 text-gray-400">Desarrollador Web Frontend</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
+                    <a href="#proyectos" class="text-gray-400 hover:text-white transition">Proyectos</a>
+                    <a href="#habilidades" class="text-gray-400 hover:text-white transition">Habilidades</a>
+                    <a href="#sobre-mi" class="text-gray-400 hover:text-white transition">Sobre Mí</a>
+                    <a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Evian Fernández. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white transition">Política de Privacidad</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white transition">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/+5356595366" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition animate-float">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menú móvil
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const navMenu = document.querySelector('nav');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-16');
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('w-full');
+                navMenu.classList.toggle('bg-white');
+                navMenu.classList.toggle('p-4');
+                navMenu.classList.toggle('shadow-md');
+            });
+            
+            // SweetAlert de bienvenida
+            setTimeout(() => {
+                Swal.fire({
+                    title: '¡Bienvenido a mi portafolio!',
+                    text: 'Gracias por visitar. Espero que disfrutes explorando mi trabajo.',
+                    icon: 'info',
+                    confirmButtonText: 'Comenzar',
+                    confirmButtonColor: '#3B82F6',
+                });
+            }, 1000);
+
+            // Script para el formulario de contacto
+            const form = document.querySelector('form');
+            if(form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
                     });
-        </script>
+                    
+                    if (response.ok) {
+                        Swal.fire('¡Éxito!', 'Tu mensaje ha sido enviado', 'success');
+                        form.reset();
+                    } else {
+                        Swal.fire('Error', 'Hubo un problema al enviar el mensaje', 'error');
+                    }
+                });
+            }
+
+            // Script para los carruseles
+            document.querySelectorAll('.carousel').forEach(carousel => {
+                const images = carousel.querySelectorAll('.carousel-image');
+                const prevBtn = carousel.parentElement.querySelector('.carousel-prev');
+                const nextBtn = carousel.parentElement.querySelector('.carousel-next');
+                let currentIndex = 0;
+
+                function showImage(index) {
+                    images.forEach((img, i) => {
+                        img.classList.toggle('opacity-0', i !== index);
+                        img.classList.toggle('opacity-100', i === index);
+                    });
+                }
+
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                });
+            });
+
+            // Función de scroll suave
+            function smoothScroll(target) {
+                const element = document.querySelector(target);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                return false;
+            }
+            
+            // Asignar smoothScroll a los botones
+            document.querySelectorAll('[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = this.getAttribute('href');
+                    if(target !== '#') {
+                        e.preventDefault();
+                        smoothScroll(target);
+                    }
+                });
+            });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
