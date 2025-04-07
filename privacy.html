@@ -3,63 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | EvianDev</title>
+    
+    <!-- SEO y metadatos -->
+    <meta name="description" content="Política de Privacidad de EvianDev. Conoce cómo protegemos y gestionamos tus datos personales.">
+    <meta name="keywords" content="privacidad, protección de datos, política de privacidad, EvianDev">
+    
+    <!-- Favicon y assets -->
     <link rel="icon" href="icon/favicon.ico" sizes="any">
     <link rel="icon" href="icon/logo-evian-bg.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
     <link rel="manifest" href="icon/site.webmanifest">
-
-    <title>Política de Privacidad | EvianDev</title>
-    <!-- Mismo estilo que tu sitio principal -->
+    
+    <!-- Estilos consistentes con el sitio principal -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Configuración de Tailwind para coincidir con tu tema -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .privacy-section {
+            scroll-margin-top: 100px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased text-gray-800">
-    <div class="container mx-auto px-6 py-12 max-w-4xl">
-        <h1 class="text-3xl md:text-4xl font-bold text-primary mb-8">Política de Privacidad</h1>
-        <p class="mb-6">Última actualización: 28 de marzo de 2025</p>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold mb-4">1. Información que recopilamos</h2>
-            <p class="mb-6">En mi sitio web portafolio, recopilo información cuando:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Me envías un mensaje a través del formulario de contacto (nombre, email y mensaje)</li>
-                <li>Utilizas el sitio (datos de analítica anónimos como dirección IP, tipo de navegador, páginas visitadas)</li>
-            </ul>
-
-            <h2 class="text-xl font-bold mb-4">2. Cómo usamos tu información</h2>
-            <p class="mb-6">La información recopilada se utiliza para:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Responder a tus consultas a través del formulario de contacto</li>
-                <li>Mejorar la experiencia del usuario en mi sitio web</li>
-                <li>Análisis estadísticos anónimos</li>
-            </ul>
-
-            <h2 class="text-xl font-bold mb-4">3. Protección de datos</h2>
-            <p class="mb-6">Implemento medidas de seguridad para proteger tu información personal. Los datos del formulario se envían mediante Formspree y se almacenan temporalmente solo para responder a tu consulta.</p>
-
-            <h2 class="text-xl font-bold mb-4">4. Cookies</h2>
-            <p class="mb-6">Este sitio utiliza cookies para:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Funcionamiento básico del sitio</li>
-                <li>Google Analytics para análisis de tráfico (datos anónimos)</li>
-            </ul>
-            <p>Puedes desactivar las cookies en la configuración de tu navegador.</p>
-
-            <h2 class="text-xl font-bold mb-4 mt-8">5. Tus derechos</h2>
-            <p class="mb-6">Tienes derecho a:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2">
-                <li>Solicitar acceso, corrección o eliminación de tus datos personales</li>
-                <li>Oponerte al procesamiento de tus datos</li>
-                <li>Solicitar limitación del tratamiento</li>
-            </ul>
-            <p>Para ejercer estos derechos, contáctame a través del correo electrónico: kkuroba588@gmail.com</p>
-
-            <h2 class="text-xl font-bold mb-4 mt-8">6. Cambios a esta política</h2>
-            <p class="mb-6">Puedo actualizar esta política ocasionalmente. Te notificaré de cambios importantes mediante un aviso en mi sitio web.</p>
-
-            <h2 class="text-xl font-bold mb-4 mt-8">7. Contacto</h2>
-            <p>Si tienes preguntas sobre esta política de privacidad, contáctame en:</p>
-            <p class="mt-2">Email: kkuroba588@gmail.com</p>
+    <!-- Header consistente con el sitio principal -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-primary flex items-center">
+                <img src="../icon/logo-evian-bg.svg" alt="EvianDev Logo" class="w-8 h-8 mr-2">
+                Evian<span class="text-secondary">Dev</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="../index.html#proyectos" class="font-medium hover:text-primary transition">Proyectos</a>
+                <a href="../index.html#contacto" class="font-medium hover:text-primary transition">Contacto</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto px-6 py-24 max-w-4xl">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">Política de Privacidad</h1>
+            <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600">Última actualización: <span class="font-semibold">28 de marzo de 2025</span></p>
+        </div>
+        
+        <!-- Índice rápido -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow-sm mb-12">
+            <h2 class="text-xl font-bold mb-4 text-primary">Índice</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li><a href="#informacion" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Información que recopilamos</a></li>
+                <li><a href="#uso" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Cómo usamos tu información</a></li>
+                <li><a href="#proteccion" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Protección de datos</a></li>
+                <li><a href="#cookies" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Cookies</a></li>
+                <li><a href="#derechos" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Tus derechos</a></li>
+                <li><a href="#cambios" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Cambios a esta política</a></li>
+                <li><a href="#contacto" class="text-blue-600 hover:underline flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Contacto</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contenido de la política -->
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-md">
+            <section id="informacion" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-info-circle mr-3 text-secondary"></i>
+                    <span>1. Información que recopilamos</span>
+                </h2>
+                <p class="mb-4">En mi sitio web portafolio (<a href="https://ev1an.github.io" class="text-primary hover:underline">https://ev1an.github.io</a>), recopilamos información de las siguientes formas:</p>
+                
+                <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                    <h3 class="font-semibold mb-2 text-primary">Información que nos proporcionas directamente:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Formulario de contacto:</strong> Cuando envías un mensaje a través del formulario, recopilamos tu nombre, dirección de correo electrónico y el contenido de tu mensaje.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 text-primary">Información recopilada automáticamente:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Datos de uso:</strong> Recopilamos información sobre cómo interactúas con el sitio, incluyendo páginas visitadas, tiempo de permanencia y acciones realizadas.</li>
+                        <li><strong>Datos técnicos:</strong> Dirección IP, tipo de navegador, versión del navegador, configuración regional, sistema operativo y otra información técnica.</li>
+                        <li><strong>Cookies:</strong> Como se detalla en la sección correspondiente más abajo.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="uso" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-hand-holding-heart mr-3 text-secondary"></i>
+                    <span>2. Cómo usamos tu información</span>
+                </h2>
+                <p class="mb-4">Utilizamos la información recopilada para los siguientes propósitos:</p>
+                <ul class="list-disc pl-6 space-y-2 mb-4">
+                    <li><strong>Comunicación:</strong> Responder a tus consultas y mensajes enviados a través del formulario de contacto.</li>
+                    <li><strong>Mejora del sitio:</strong> Analizar el uso del sitio para mejorar su funcionalidad, contenido y experiencia de usuario.</li>
+                    <li><strong>Seguridad:</strong> Detectar y prevenir actividades fraudulentas o usos no autorizados del sitio.</li>
+                    <li><strong>Cumplimiento legal:</strong> Cumplir con requisitos legales y regulatorios aplicables.</li>
+                </ul>
+                <p>No vendemos, alquilamos ni compartimos tu información personal con terceros con fines comerciales.</p>
+            </section>
+
+            <section id="proteccion" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-shield-alt mr-3 text-secondary"></i>
+                    <span>3. Protección de datos</span>
+                </h2>
+                <p class="mb-4">Implementamos medidas técnicas y organizativas apropiadas para proteger tu información personal contra accesos no autorizados, alteración, divulgación o destrucción.</p>
+                
+                <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                    <h3 class="font-semibold mb-2 text-primary">Procesamiento de datos del formulario:</h3>
+                    <p>Los datos del formulario de contacto se procesan a través de <a href="https://formspree.io" class="text-primary hover:underline" target="_blank">Formspree</a>, un servicio externo que facilita el envío de formularios estáticos. Los datos se almacenan temporalmente solo para permitirnos responder a tu consulta y no se utilizan para otros fines.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 text-primary">Almacenamiento de datos:</h3>
+                    <p>Los datos personales que nos proporcionas se almacenan en servidores seguros y solo se conservan durante el tiempo necesario para cumplir con los propósitos descritos en esta política o según lo requiera la ley.</p>
+                </div>
+            </section>
+
+            <section id="cookies" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-cookie-bite mr-3 text-secondary"></i>
+                    <span>4. Cookies y tecnologías similares</span>
+                </h2>
+                <p class="mb-4">Este sitio utiliza cookies y tecnologías similares para las siguientes finalidades:</p>
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li><strong>Funcionamiento esencial:</strong> Cookies necesarias para el correcto funcionamiento del sitio.</li>
+                    <li><strong>Análisis:</strong> Utilizamos Google Analytics para recopilar información anónima sobre el uso del sitio y mejorar nuestra oferta.</li>
+                    <li><strong>Preferencias:</strong> Para recordar tus preferencias de visualización y configuración.</li>
+                </ul>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2 text-primary">Control de cookies:</h3>
+                    <p>Puedes controlar y/o eliminar las cookies como desees. Para más información, visita <a href="https://www.aboutcookies.org" class="text-primary hover:underline" target="_blank">aboutcookies.org</a>. Puedes eliminar todas las cookies que ya están en tu ordenador y configurar la mayoría de los navegadores para impedir que se coloquen. Sin embargo, si haces esto, es posible que debas ajustar manualmente algunas preferencias cada vez que visites un sitio y que algunos servicios y funcionalidades no funcionen.</p>
+                </div>
+            </section>
+
+            <section id="derechos" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-user-shield mr-3 text-secondary"></i>
+                    <span>5. Tus derechos de protección de datos</span>
+                </h2>
+                <p class="mb-4">De acuerdo con la legislación aplicable, tienes los siguientes derechos sobre tus datos personales:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-primary">Derecho de acceso</h3>
+                        <p>Solicitar una copia de la información personal que tenemos sobre ti.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-primary">Derecho de rectificación</h3>
+                        <p>Solicitar la corrección de información incorrecta o incompleta.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-primary">Derecho de supresión</h3>
+                        <p>Solicitar la eliminación de tus datos personales.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2 text-primary">Derecho de oposición</h3>
+                        <p>Oponerte al procesamiento de tus datos en ciertas circunstancias.</p>
+                    </div>
+                </div>
+                <p>Para ejercer cualquiera de estos derechos, por favor contáctame a través del correo electrónico proporcionado en la sección de <a href="#contacto" class="text-primary hover:underline">Contacto</a>.</p>
+            </section>
+
+            <section id="cambios" class="privacy-section mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-exchange-alt mr-3 text-secondary"></i>
+                    <span>6. Cambios a esta política</span>
+                </h2>
+                <p class="mb-4">Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en nuestras prácticas o por otros motivos operativos, legales o regulatorios.</p>
+                <p>Cuando hagamos cambios significativos, publicaremos la política revisada en esta página con una nueva fecha de "Última actualización". Te recomendamos que revises periódicamente esta política para estar informado sobre cómo protegemos tu información.</p>
+            </section>
+
+            <section id="contacto" class="privacy-section">
+                <h2 class="text-2xl font-bold mb-4 text-primary flex items-center">
+                    <i class="fas fa-envelope mr-3 text-secondary"></i>
+                    <span>7. Contacto</span>
+                </h2>
+                <p class="mb-4">Si tienes preguntas, comentarios o solicitudes relacionadas con esta Política de Privacidad o el tratamiento de tus datos personales, puedes contactarme a través de:</p>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="font-semibold mb-2">Correo electrónico: <a href="mailto:kkuroba588@gmail.com" class="text-primary hover:underline">kkuroba588@gmail.com</a></p>
+                    <p class="font-semibold">Formulario de contacto: <a href="../index.html#contacto" class="text-primary hover:underline">en la página principal</a></p>
+                </div>
+                <p class="mt-4 text-sm text-gray-500">Esta política está diseñada para cumplir con el Reglamento General de Protección de Datos (GDPR) de la UE y otras regulaciones aplicables de protección de datos.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer consistente con el sitio principal -->
+    <footer class="bg-dark py-8 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="../index.html" class="text-2xl font-bold text-white flex items-center">
+                        <img src="../icon/logo-evian-bg.svg" alt="EvianDev Logo" class="w-8 h-8 mr-2">
+                        Evian<span class="text-secondary">Dev</span>
+                    </a>
+                    <p class="mt-2 text-gray-400">Desarrollador Web Frontend</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
+                    <a href="../index.html#proyectos" class="text-gray-400 hover:text-white transition">Proyectos</a>
+                    <a href="../index.html#contacto" class="text-gray-400 hover:text-white transition">Contacto</a>
+                    <a href="privacy.html" class="text-gray-400 hover:text-white transition font-semibold">Privacidad</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Evian Fernández. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mostrar/ocultar botón de volver arriba
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Scroll suave para los enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
