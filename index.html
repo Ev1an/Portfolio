@@ -217,6 +217,26 @@
                 transform: translate(0, 0) rotate(360deg);
             }
         }
+
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            transform-origin: top;
+            transform: scaleY(0);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #mobile-menu.hidden {
+            transform: scaleY(0);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #mobile-menu:not(.hidden) {
+            transform: scaleY(1);
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased text-gray-800">
@@ -226,23 +246,23 @@
     </div>
     
     <!-- Header/Navbar -->
-    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-8 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-primary flex items-center">
-                <img src="icon/logo-evian-bg.svg" alt="Logo" class="w-8 h-8 mr-2">
+                <img src="icon/logo-evian-bg.svg" alt="Logo" class="w-10 h-10 mr-3">
                 Evian<span class="text-secondary">Dev</span>
             </a>
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.projects">Proyectos</a>
-                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.skills">Habilidades</a>
-                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.experience">Experiencia</a>
-                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.about">Sobre mí</a>
-                <a href="#contacto" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.contact">Contacto</a>
-                <div class="language-selector ml-4">
-                    <button class="flex items-center focus:outline-none">
+            <nav class="hidden md:flex space-x-10 items-center">
+                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.projects">Proyectos</a>
+                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.skills">Habilidades</a>
+                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.experience">Experiencia</a>
+                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.about">Sobre mí</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.contact">Contacto</a>
+                <div class="language-selector ml-6">
+                    <button class="flex items-center focus:outline-none bg-gray-100 px-3 py-2 rounded-lg hover:bg-gray-200 transition">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español" class="language-flag">
-                        <span class="text-sm">ES</span>
-                        <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        <span class="text-sm ml-2">ES</span>
+                        <i class="fas fa-chevron-down ml-2 text-xs"></i>
                     </button>
                     <div class="language-dropdown">
                         <a href="#" class="language-option" data-lang="es">
@@ -262,13 +282,13 @@
         </div>
         
         <!-- Mobile menu -->
-        <div class="md:hidden hidden absolute top-16 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md" id="mobile-menu">
+        <div class="md:hidden hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-sm shadow-md" id="mobile-menu">
             <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.projects">Proyectos</a>
-                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.skills">Habilidades</a>
-                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.experience">Experiencia</a>
-                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.about">Sobre mí</a>
-                <a href="#contacto" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.contact">Contacto</a>
+                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.projects">Proyectos</a>
+                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.skills">Habilidades</a>
+                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.experience">Experiencia</a>
+                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.about">Sobre mí</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition nav-link text-lg" data-i18n="nav.contact">Contacto</a>
                 <div class="flex items-center space-x-4 pt-4">
                     <a href="#" class="language-option flex items-center" data-lang="es">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español" class="language-flag">
@@ -1083,19 +1103,11 @@
             
             window.addEventListener('scroll', function() {
                 const currentScrollY = window.scrollY;
+                const isMobile = window.innerWidth < 768; // md breakpoint de Tailwind
                 
                 // Cambiar apariencia al hacer scroll
-                if (currentScrollY > 50) {
-                    navbar.classList.add('py-2', 'bg-white/95', 'shadow-lg');
-                    navbar.classList.remove('py-3', 'bg-white/90', 'shadow-md');
-                } else {
-                    navbar.classList.add('py-3', 'bg-white/90', 'shadow-md');
-                    navbar.classList.remove('py-2', 'bg-white/95', 'shadow-lg');
-                }
-                
-                // Ocultar navbar al hacer scroll hacia abajo y mostrarla al hacer scroll hacia arriba
-                if (currentScrollY > lastScrollY && currentScrollY > 300) {
-                    navbar.style.transform = 'translateY(-100%)';
+                if (currentScrollY > lastScrollY) {
+                    navbar.style.transform = isMobile ? 'translateY(-100%)' : 'translateY(-79%)';
                 } else {
                     navbar.style.transform = 'translateY(0)';
                 }
@@ -1121,6 +1133,15 @@
             
             mobileMenuButton.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
+                
+                // Asegurar que el menú esté visible antes de la animación
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.style.display = 'block';
+                    // Pequeño retraso para permitir que el display:block se aplique
+                    setTimeout(() => {
+                        mobileMenu.classList.remove('hidden');
+                    }, 10);
+                }
             });
             
             // Script para el formulario de contacto
