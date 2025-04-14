@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evian Fernández | Desarrollador Web Frontend</title>
-    <meta name="description" content="Desarrollador web frontend especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores">
-    <meta name="keywords" content="desarrollador web, frontend, HTML, CSS, JavaScript, React, Latinoamérica">
+    <title>Evian Fernández | Especialista en Webs para Negocios</title>
+    <meta name="description" content="Diseño sitios que convierten visitantes en clientes - Webs profesionales y de alto rendimiento para tu negocio">
+    <meta name="keywords" content="crear página web, diseño web económico, tienda online rápida, web para negocios, mejorar sitio web">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="icon/favicon.ico" sizes="any">
@@ -22,32 +22,31 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ev1an.github.io">
-    <meta property="og:title" content="Evian Fernández (Ev1an) | Desarrollador Web Frontend">
-    <meta property="og:description" content="Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores">
+    <meta property="og:title" content="Evian Fernández | Especialista en Webs para Negocios">
+    <meta property="og:description" content="Diseño sitios que convierten visitantes en clientes - ¡Tu éxito online comienza aquí!">
     <meta property="og:image" content="https://ev1an.github.io/img/Foto.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ev1an.github.io">
-    <meta property="twitter:title" content="Evian Fernández (Ev1an) | Desarrollador Web Frontend">
-    <meta property="twitter:description" content="Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos">
+    <meta property="twitter:title" content="Evian Fernández | Especialista en Webs para Negocios">
+    <meta property="twitter:description" content="Diseño sitios que convierten visitantes en clientes - ¡Tu éxito online comienza aquí!">
     <meta property="twitter:image" content="https://ev1an.github.io/img/Foto.jpg">
 
     <!-- Schema.org para Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Evian Fernández",
-      "alternateName": "Ev1an",
-      "jobTitle": "Desarrollador Web Frontend",
-      "url": "https://ev1an.github.io",
-      "sameAs": [
-        "https://github.com/Ev1an",
-        "https://www.instagram.com/evianfernandez7"
-      ],
-      "description": "Desarrollador web frontend (GitHub: Ev1an) especializado en crear sitios rápidos y modernos para pequeñas empresas y emprendedores",
-      "image": "https://ev1an.github.io/img/Foto.jpg"
+      "@type": "LocalBusiness",
+      "name": "Evian Fernández - Desarrollo Web",
+      "priceRange": "$$",
+      "image": "https://ev1an.github.io/img/Foto.jpg",
+      "telephone": "+5356595366",
+      "email": "kkuroba588@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CU"
+      }
     }
     </script>
    
@@ -101,6 +100,39 @@
 
         .custom-shape-divider-bottom-1687542608 .shape-fill {
             fill: #3B82F6;
+        }
+        
+        #navbar {
+            transition: all 0.4s ease;
+        }
+        
+        /* Mejora el hover de los enlaces de la navbar */
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3B82F6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Estilo para enlace activo */
+        .nav-link.active {
+            color: #3B82F6;
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
         }
         
         .project-card:hover .project-image {
@@ -188,19 +220,24 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased text-gray-800">
+    <!-- Banner nuevo -->
+    <div class="bg-secondary text-white text-center py-3 px-4" data-i18n="banner.offer">
+        🚀 ¡Oferta Especial! Hosting + Dominio GRATIS el primer año con tu web profesional
+    </div>
+    
     <!-- Header/Navbar -->
-    <header class="fixed w-full bg-white shadow-md z-50">
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50 transition-all duration-300" id="navbar">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-primary flex items-center">
                 <img src="icon/logo-evian-bg.svg" alt="Logo" class="w-8 h-8 mr-2">
                 Evian<span class="text-secondary">Dev</span>
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#proyectos" class="font-medium hover:text-primary transition" data-i18n="nav.projects">Proyectos</a>
-                <a href="#habilidades" class="font-medium hover:text-primary transition" data-i18n="nav.skills">Habilidades</a>
-                <a href="#experiencia" class="font-medium hover:text-primary transition" data-i18n="nav.experience">Experiencia</a>
-                <a href="#sobre-mi" class="font-medium hover:text-primary transition" data-i18n="nav.about">Sobre mí</a>
-                <a href="#contacto" class="font-medium hover:text-primary transition" data-i18n="nav.contact">Contacto</a>
+                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.projects">Proyectos</a>
+                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.skills">Habilidades</a>
+                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.experience">Experiencia</a>
+                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.about">Sobre mí</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.contact">Contacto</a>
                 <div class="language-selector ml-4">
                     <button class="flex items-center focus:outline-none">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español" class="language-flag">
@@ -225,13 +262,13 @@
         </div>
         
         <!-- Mobile menu -->
-        <div class="md:hidden hidden absolute top-16 left-0 w-full bg-white shadow-md" id="mobile-menu">
+        <div class="md:hidden hidden absolute top-16 left-0 w-full bg-white/95 backdrop-blur-sm shadow-md" id="mobile-menu">
             <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-                <a href="#proyectos" class="font-medium hover:text-primary transition" data-i18n="nav.projects">Proyectos</a>
-                <a href="#habilidades" class="font-medium hover:text-primary transition" data-i18n="nav.skills">Habilidades</a>
-                <a href="#experiencia" class="font-medium hover:text-primary transition" data-i18n="nav.experience">Experiencia</a>
-                <a href="#sobre-mi" class="font-medium hover:text-primary transition" data-i18n="nav.about">Sobre mí</a>
-                <a href="#contacto" class="font-medium hover:text-primary transition" data-i18n="nav.contact">Contacto</a>
+                <a href="#proyectos" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.projects">Proyectos</a>
+                <a href="#habilidades" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.skills">Habilidades</a>
+                <a href="#experiencia" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.experience">Experiencia</a>
+                <a href="#sobre-mi" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.about">Sobre mí</a>
+                <a href="#contacto" class="font-medium hover:text-primary transition nav-link" data-i18n="nav.contact">Contacto</a>
                 <div class="flex items-center space-x-4 pt-4">
                     <a href="#" class="language-option flex items-center" data-lang="es">
                         <img src="https://flagcdn.com/w20/es.png" alt="Español" class="language-flag">
@@ -268,8 +305,8 @@
             
             <div class="md:w-1/2 text-center md:text-left">
                 <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-i18n="hero.title">Evian Fernández</h1>
-                <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6" data-i18n="hero.subtitle">Desarrollador Web Frontend</h2>
-                <p class="text-xl text-white mb-8" data-i18n="hero.description">Creo sitios web rápidos, modernos y atractivos que ayudan a pequeñas empresas a destacar en línea.</p>
+                <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6" data-i18n="hero.subtitle">Especialista en Webs para Negocios</h2>
+                <p class="text-xl text-white mb-8" data-i18n="hero.description">Diseño sitios que convierten visitantes en clientes - ¡Tu éxito online comienza aquí!</p>
                 
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#contacto" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg active:scale-95 transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary block text-center"
@@ -309,43 +346,27 @@
             </div>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <p class="text-lg text-gray-700 mb-6" data-i18n="about.text1">¡Hola! Soy Evian, un desarrollador web frontend con sede en Latinoamérica. Me especializo en construir sitios web modernos y optimizados que ayudan a negocios y emprendedores a establecer su presencia en línea.</p>
+                    <p class="text-lg text-gray-700 mb-6" data-i18n="about.text1">¡Hola! Soy Evian, especialista en Webs para negocios con sede en Latinoamérica. Me especializo en construir sitios web modernos y optimizados que ayudan a negocios y emprendedores a establecer su presencia en línea.</p>
                     <p class="text-lg text-gray-700 mb-6" data-i18n="about.text2">Con conocimientos en HTML, CSS, JavaScript y experiencia práctica en proyectos reales, puedo ayudarte a llevar tu idea a la web con un enfoque en rendimiento, diseño atractivo y experiencia de usuario.</p>
                     <p class="text-lg text-gray-700 mb-8" data-i18n="about.text3">Trabajo con metodologías ágiles y me mantengo constantemente actualizado con las últimas tendencias en desarrollo web para ofrecer soluciones de calidad.</p>
                     <div class="flex items-center space-x-4">
                         <span class="text-sm font-medium text-gray-500" data-i18n="about.languages">Idiomas:</span>
-                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Español (Nativo)</span>
-                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Inglés (Intermedio)</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium" data-i18n="about.lang.spanish">Español (Nativo)</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium" data-i18n="about.lang.english">Inglés (Intermedio)</span>
                     </div>
                 </div>
                 <div class="md:w-1/2 bg-gray-100 p-8 rounded-xl shadow-lg">
                     <h3 class="text-xl font-semibold text-dark mb-6" data-i18n="about.services">Mis Servicios</h3>
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-3 rounded-lg text-primary mr-4">
-                                <i class="fas fa-laptop-code text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-dark mb-2" data-i18n="about.service1.title">Desarrollo Web Personalizado</h4>
-                                <p class="text-gray-600" data-i18n="about.service1.desc">Sitios web a medida diseñados para tus necesidades específicas con las últimas tecnologías frontend.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-secondary bg-opacity-10 p-3 rounded-lg text-secondary mr-4">
-                                <i class="fas fa-mobile-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-dark mb-2" data-i18n="about.service2.title">Diseño Responsivo</h4>
-                                <p class="text-gray-600" data-i18n="about.service2.desc">Webs que se adaptan perfectamente a cualquier dispositivo, desde móviles hasta pantallas grandes.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-purple-100 p-3 rounded-lg text-purple-600 mr-4">
-                                <i class="fas fa-tachometer-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-lg font-semibold text-dark mb-2" data-i18n="about.service3.title">Optimización de Rendimiento</h4>
-                                <p class="text-gray-600" data-i18n="about.service3.desc">Sitios rápidos que mejoran la experiencia de usuario y el posicionamiento en buscadores.</p>
+                        <div class="border-2 border-primary rounded-xl p-6">
+                            <h4 class="text-xl font-bold text-primary mb-3" data-i18n="about.service.title">Desarrollo Web Profesional</h4>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item1">Sitios web de alto rendimiento</span></div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item2">Diseño móvil adaptativo</span></div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item3">Optimización SEO incluida</span></div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item4">Integración con redes sociales</span></div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item5">Formularios funcionales</span></div>
+                                <div class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i><span data-i18n="about.service.item6">Asesoría personalizada</span></div>
                             </div>
                         </div>
                     </div>
@@ -381,7 +402,7 @@
                                     </span>
                                     <span class="flex items-center">
                                         <i class="fas fa-calendar-alt mr-1"></i>
-                                        <span data-i18n="experience.job1.date">2022 - Presente</span>
+                                        <span data-i18n="experience.job1.date">2023 - Presente</span>
                                     </span>
                                 </div>
                                 <p class="text-gray-600 mb-4" data-i18n="experience.job1.desc">Desarrollo de sitios web personalizados para pequeñas empresas y emprendedores, enfocado en rendimiento y experiencia de usuario.</p>
@@ -435,64 +456,32 @@
                 <p class="max-w-2xl mx-auto text-lg text-gray-600" data-i18n="skills.subtitle">Tecnologías que domino y utilizo regularmente en mis proyectos</p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- HTML5 -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML5" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">HTML5</h3>
-                        
-                    </div>
-                </div>
-                
-                <!-- CSS3 -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">CSS3</h3>
-                      
-                    </div>
-                </div>
-                
-                <!-- JavaScript -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">JavaScript</h3>
-                       
-                    </div>
-                </div>
-                
-                <!-- Tailwind CSS -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/tailwindcss.png" alt="Tailwind CSS" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">Tailwind CSS</h3>
-                       
-                    </div>
-                </div>
-                
-                <!-- Git -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/git.png" alt="Git" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">Git</h3>
-                       
-                    </div>
-                </div>
-                
-               
-                <!-- C++ -->
-                <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-                    <div class="flex flex-col items-center text-center">
-                        <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="C++" class="w-16 h-16 mb-4">
-                        <h3 class="text-lg font-semibold text-dark mb-2">C++</h3>
-                        
-                      
-                    </div>
-                </div>
+         <!-- Habilidades modificadas -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="flex items-start">
+            <div class="bg-primary bg-opacity-10 p-3 rounded-lg text-primary mr-4">
+                <i class="fas fa-mobile-alt text-2xl"></i>
             </div>
-            
+            <div>
+                <h3 class="text-xl font-bold text-dark mb-2" data-i18n="skills.responsive.title">Adaptable a Todos los Dispositivos</h3>
+                <p class="text-gray-600" data-i18n="skills.responsive.desc">¿Tu sitio no se ve bien en móviles? Soluciones 100% responsivas</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="flex items-start">
+            <div class="bg-secondary bg-opacity-10 p-3 rounded-lg text-secondary mr-4">
+                <i class="fas fa-chart-line text-2xl"></i>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold text-dark mb-2" data-i18n="skills.conversion.title">Diseños que Venden</h3>
+                <p class="text-gray-600" data-i18n="skills.conversion.desc">Estructuras probadas para aumentar conversiones</p>
+            </div>
+        </div>
+    </div>
+</div>   
             <!-- Otras habilidades -->
             <div class="mt-16">
                 <h3 class="text-2xl font-bold text-dark mb-6 text-center" data-i18n="skills.other.title">Otras Habilidades</h3>
@@ -556,6 +545,16 @@
                     
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-dark mb-2" data-i18n="projects.project1.title">Tienda Online Minimalista</h3>
+                        <div class="resultado-impacto bg-green-50 p-4 rounded-lg mb-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-trophy text-green-600 mr-2"></i>
+                                <span class="font-bold" data-i18n="projects.results.title">Resultados:</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="text-sm" data-i18n="projects.results.sales">✅ +45% ventas</div>
+                                <div class="text-sm" data-i18n="projects.results.speed">🚀 2.8x más rápido</div>
+                            </div>
+                        </div>
                         <div class="pro-tip bg-blue-50 p-4 rounded-lg my-4">
                             <h4 class="font-bold flex items-center">
                                 <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
@@ -602,6 +601,16 @@
                     
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-dark mb-2" data-i18n="projects.project2.title">Landing Page de Alto Impacto</h3>
+                        <div class="resultado-impacto bg-green-50 p-4 rounded-lg mb-4">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-trophy text-green-600 mr-2"></i>
+                                <span class="font-bold" data-i18n="projects.results.title">Resultados:</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="text-sm" data-i18n="projects.results.sales">✅ +45% ventas</div>
+                                <div class="text-sm" data-i18n="projects.results.speed">🚀 2.8x más rápido</div>
+                            </div>
+                        </div>
                         <div class="pro-tip bg-blue-50 p-4 rounded-lg my-4">
                             <h4 class="font-bold flex items-center">
                                 <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
@@ -647,15 +656,13 @@
                 <!-- Cliente 1 -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
-                            <img src="img/Alvaro_Cliente1.jpg" alt="Cliente Satisfecho" class="w-full h-full object-cover">
-                        </div>
+                        <img src="img/Alvaro_Cliente1.jpg" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-dark">Álvaro Domínguez</h4>
-                            <p class="text-gray-500 text-sm" data-i18n="testimonials.client1.position">Dueño de Negocio | Piercings</p>
+                            <p class="text-gray-500 text-sm">Dueño de Negocio</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic" data-i18n="testimonials.client1.text">El trabajo de Evian me ha sido de mucha ayuda para mi negocio porque mis clientes ahora tienen más comodidad y confianza con mi negocio 10/10 sus servicios.</p>
+                    <p class="text-gray-600 italic" data-i18n="testimonials.client1.text">"En 3 semanas Evian transformó nuestro sitio obsoleto en una moderna plataforma que nos trajo 23 nuevos clientes en el primer mes"</p>
                     <div class="flex mt-4 text-yellow-400">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -668,15 +675,13 @@
                 <!-- Cliente 2 -->
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
-                            <img src="img/Dante_Cliente2.jpg" alt="Cliente Satisfecho" class="w-full h-full object-cover">
-                        </div>
+                        <img src="img/Dante_Cliente2.jpg" class="w-12 h-12 rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-dark">Dante Durán</h4>
-                            <p class="text-gray-500 text-sm" data-i18n="testimonials.client2.position">Blogger | Escritor</p>
+                            <p class="text-gray-500 text-sm">Blogger | Escritor</p>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic" data-i18n="testimonials.client2.text">Se la rifó el programador, muy buen servicio.</p>
+                    <p class="text-gray-600 italic" data-i18n="testimonials.client2.text">"Se la rifó el programador, muy buen servicio."</p>
                     <div class="flex mt-4 text-yellow-400">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -684,6 +689,23 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva sección FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8" data-i18n="faq.title">Preguntas Frecuentes</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold mb-2" data-i18n="faq.time.question">¿Cuánto tiempo toma hacer mi web?</h3>
+                    <p class="text-gray-600" data-i18n="faq.time.answer">Entregamos proyectos en 10-15 días hábiles desde la aprobación del diseño</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold mb-2" data-i18n="faq.maintenance.question">¿Incluyen mantenimiento?</h3>
+                    <p class="text-gray-600" data-i18n="faq.maintenance.answer">Ofrecemos planes de mantenimiento mensual con actualizaciones y soporte</p>
                 </div>
             </div>
         </div>
@@ -712,7 +734,14 @@
                         </div>
                         <div>
                             <label for="message" class="block text-gray-700 font-medium mb-2" data-i18n="contact.form.message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Cuéntame sobre tu proyecto"></textarea>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                required 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="Ej: Mi sitio no carga rápido / Quiero una tienda online...">
+                            </textarea>
                         </div>
                         <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition" data-i18n="contact.form.submit">Enviar Mensaje</button>
                     </form>
@@ -743,7 +772,7 @@
                                 <i class="fab fa-github text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="text-lg font-semibold text-dark mb-1">GitHub</h4>
+                                <h4 class="text-lg font-semibold text-dark mb-1" data-i18n="contact.info.github">GitHub</h4>
                                 <a href="https://github.com/Ev1an" target="_blank" class="text-gray-600 hover:text-primary transition">github.com/Ev1an</a>
                             </div>
                         </div>
@@ -766,28 +795,36 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark py-8 text-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <a href="#" class="text-2xl font-bold text-white flex items-center">
-                        <img src="icon/logo-evian-bg.svg" alt="Logo" class="w-8 h-8 mr-2">
-                        Evian<span class="text-secondary">Dev</span>
-                    </a>
-                    <p class="mt-2 text-gray-400" data-i18n="footer.tagline">Desarrollador Web Frontend</p>
-                </div>
-                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
-                    <a href="#proyectos" class="text-gray-400 hover:text-white transition" data-i18n="nav.projects">Proyectos</a>
-                    <a href="#habilidades" class="text-gray-400 hover:text-white transition" data-i18n="nav.skills">Habilidades</a>
-                    <a href="#sobre-mi" class="text-gray-400 hover:text-white transition" data-i18n="nav.about">Sobre Mí</a>
-                    <a href="#contacto" class="text-gray-400 hover:text-white transition" data-i18n="nav.contact">Contacto</a>
-                </div>
+    <footer class="bg-dark py-12 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4" data-i18n="footer.cta.title">¿Listo para Impulsar tu Negocio?</h3>
+                <a href="#contacto" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105" data-i18n="footer.cta.button">
+                    Comienza Ahora → 
+                </a>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Evian Fernández. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
-                <div class="flex space-x-6">
-                    <a href="privacy.html" class="text-gray-400 hover:text-white transition" data-i18n="footer.privacy">Política de Privacidad</a>
-                    <a href="terms.html" class="text-gray-400 hover:text-white transition" data-i18n="footer.terms">Términos de Servicio</a>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <a href="#" class="text-2xl font-bold text-white flex items-center">
+                            <img src="icon/logo-evian-bg.svg" alt="Logo" class="w-8 h-8 mr-2">
+                            Evian<span class="text-secondary">Dev</span>
+                        </a>
+                        <p class="mt-2 text-gray-400" data-i18n="footer.tagline">Especialista en Webs para Negocios</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0 text-center md:text-left">
+                        <a href="#proyectos" class="text-gray-400 hover:text-white transition" data-i18n="nav.projects">Proyectos</a>
+                        <a href="#habilidades" class="text-gray-400 hover:text-white transition" data-i18n="nav.skills">Habilidades</a>
+                        <a href="#sobre-mi" class="text-gray-400 hover:text-white transition" data-i18n="nav.about">Sobre Mí</a>
+                        <a href="#contacto" class="text-gray-400 hover:text-white transition" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 Evian Fernández. 
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition" data-i18n="footer.privacy">Política de Privacidad</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition" data-i18n="footer.terms">Términos de Servicio</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -807,19 +844,29 @@
                 'nav.experience': 'Experiencia',
                 'nav.about': 'Sobre mí',
                 'nav.contact': 'Contacto',
+                'banner.offer': '🚀 ¡Oferta Especial! Hosting + Dominio GRATIS el primer año con tu web profesional',
                 'hero.title': 'Evian Fernández',
-                'hero.subtitle': 'Desarrollador Web Frontend',
-                'hero.description': 'Creo sitios web rápidos, modernos y atractivos que ayudan a pequeñas empresas a destacar en línea.',
+                'hero.subtitle': 'Especialista en Webs para Negocios',
+                'hero.description': 'Diseño sitios que convierten visitantes en clientes - ¡Tu éxito online comienza aquí!',
                 'hero.cta1': 'Contrátame',
                 'hero.cta2': 'Ver Proyectos',
                 'about.title': 'Sobre Mí',
                 'about.subtitle': 'Apasionado por crear soluciones digitales que generan impacto real',
-                'about.text1': '¡Hola! Soy Evian, un desarrollador web frontend con sede en Latinoamérica. Me especializo en construir sitios web modernos y optimizados que ayudan a negocios y emprendedores a establecer su presencia en línea.',
+                'about.text1': '¡Hola! Soy Evian, especialista en Webs para negocios con sede en Latinoamérica. Me especializo en construir sitios web modernos y optimizados que ayudan a negocios y emprendedores a establecer su presencia en línea.',
                 'about.text2': 'Con conocimientos en HTML, CSS, JavaScript y experiencia práctica en proyectos reales, puedo ayudarte a llevar tu idea a la web con un enfoque en rendimiento, diseño atractivo y experiencia de usuario.',
                 'about.text3': 'Trabajo con metodologías ágiles y me mantengo constantemente actualizado con las últimas tendencias en desarrollo web para ofrecer soluciones de calidad.',
                 'about.languages': 'Idiomas:',
+                'about.lang.spanish': 'Español (Nativo)',
+                'about.lang.english': 'Inglés (Intermedio)',
                 'about.services': 'Mis Servicios',
-                'about.service1.title': 'Desarrollo Web Personalizado',
+                'about.service.title': 'Desarrollo Web Profesional',
+                'about.service.item1': 'Sitios web de alto rendimiento',
+                'about.service.item2': 'Diseño móvil adaptativo',
+                'about.service.item3': 'Optimización SEO incluida',
+                'about.service.item4': 'Integración con redes sociales',
+                'about.service.item5': 'Formularios funcionales',
+                'about.service.item6': 'Asesoría personalizada',
+                'about.service1.title': 'Desarrollo Web Profesional',
                 'about.service1.desc': 'Sitios web a medida diseñados para tus necesidades específicas con las últimas tecnologías frontend.',
                 'about.service2.title': 'Diseño Responsivo',
                 'about.service2.desc': 'Webs que se adaptan perfectamente a cualquier dispositivo, desde móviles hasta pantallas grandes.',
@@ -829,7 +876,7 @@
                 'experience.subtitle': 'Mi trayectoria y proyectos destacados',
                 'experience.job1.title': 'Desarrollador Web Freelance',
                 'experience.job1.company': 'Autónomo',
-                'experience.job1.date': '2022 - Presente',
+                'experience.job1.date': '2023 - Presente',
                 'experience.job1.desc': 'Desarrollo de sitios web personalizados para pequeñas empresas y emprendedores, enfocado en rendimiento y experiencia de usuario.',
                 'experience.job2.title': 'Estudiante de Desarrollo Web',
                 'experience.job2.company': 'Platzi, Udemy, FreeCodeCamp',
@@ -837,6 +884,10 @@
                 'experience.job2.desc': 'Formación intensiva en desarrollo web frontend a través de plataformas en línea, completando más de 20 cursos y certificaciones.',
                 'skills.title': 'Mis Habilidades',
                 'skills.subtitle': 'Tecnologías que domino y utilizo regularmente en mis proyectos',
+                'skills.responsive.title': 'Adaptable a Todos los Dispositivos',
+                'skills.responsive.desc': '¿Tu sitio no se ve bien en móviles? Soluciones 100% responsivas',
+                'skills.conversion.title': 'Diseños que Venden',
+                'skills.conversion.desc': 'Estructuras probadas para aumentar conversiones',
                 'skills.other.title': 'Otras Habilidades',
                 'skills.other.1': 'Diseño Responsivo',
                 'skills.other.2': 'Optimización SEO',
@@ -845,6 +896,9 @@
                 'skills.other.5': 'Trabajo en Equipo',
                 'projects.title': 'Mis Proyectos',
                 'projects.subtitle': 'Algunos de mis trabajos recientes y proyectos personales',
+                'projects.results.title': 'Resultados:',
+                'projects.results.sales': '✅ +45% ventas',
+                'projects.results.speed': '🚀 2.8x más rápido',
                 'projects.tip': 'Consejo Profesional',
                 'projects.project1.title': 'Tienda Online Minimalista',
                 'projects.project1.tip': '"Implementé un sistema de cache local para el carrito, permitiendo a los usuarios no perder sus productos incluso sin conexión, aumentando la retención en un 15% según tests A/B"',
@@ -855,10 +909,10 @@
                 'projects.coming.desc': 'Estoy trabajando en nuevos proyectos emocionantes',
                 'testimonials.title': 'Clientes Satisfechos',
                 'testimonials.subtitle': 'Lo que dicen quienes han trabajado conmigo',
-                'testimonials.client1.position': 'Dueño de Negocio | Piercings',
-                'testimonials.client1.text': 'El trabajo de Evian me ha sido de mucha ayuda para mi negocio porque mis clientes ahora tienen más comodidad y confianza con mi negocio 10/10 sus servicios.',
+                'testimonials.client1.position': 'Dueño de Negocio',
+                'testimonials.client1.text': '"En 3 semanas Evian transformó nuestro sitio obsoleto en una moderna plataforma que nos trajo 23 nuevos clientes en el primer mes"',
                 'testimonials.client2.position': 'Blogger | Escritor',
-                'testimonials.client2.text': 'Se la rifó el programador, muy buen servicio.',
+                'testimonials.client2.text': '"Se la rifó el programador, muy buen servicio."',
                 'contact.title': 'Trabajemos Juntos',
                 'contact.subtitle': '¿Tienes un proyecto en mente? Contáctame y hagámoslo realidad',
                 'contact.form.title': 'Envíame un Mensaje',
@@ -869,11 +923,19 @@
                 'contact.info.title': 'Información de Contacto',
                 'contact.info.email': 'Correo Electrónico',
                 'contact.info.whatsapp': 'WhatsApp',
+                'contact.info.github': 'GitHub',
                 'contact.info.social': 'Sígueme en Redes',
-                'footer.tagline': 'Desarrollador Web Frontend',
+                'footer.tagline': 'Especialista en Webs para Negocios',
                 'footer.rights': 'Todos los derechos reservados.',
                 'footer.privacy': 'Política de Privacidad',
-                'footer.terms': 'Términos de Servicio'
+                'footer.terms': 'Términos de Servicio',
+                'footer.cta.title': '¿Listo para Impulsar tu Negocio?',
+                'footer.cta.button': 'Comienza Ahora →',
+                'faq.title': 'Preguntas Frecuentes',
+                'faq.time.question': '¿Cuánto tiempo toma hacer mi web?',
+                'faq.time.answer': 'Entregamos proyectos en 10-15 días hábiles desde la aprobación del diseño',
+                'faq.maintenance.question': '¿Incluyen mantenimiento?',
+                'faq.maintenance.answer': 'Ofrecemos planes de mantenimiento mensual con actualizaciones y soporte'
             },
             'en': {
                 'nav.projects': 'Projects',
@@ -881,29 +943,39 @@
                 'nav.experience': 'Experience',
                 'nav.about': 'About Me',
                 'nav.contact': 'Contact',
+                'banner.offer': '🚀 Special Offer! FREE Hosting + Domain for the first year with your professional website',
                 'hero.title': 'Evian Fernández',
-                'hero.subtitle': 'Frontend Web Developer',
-                'hero.description': 'I create fast, modern and attractive websites that help small businesses stand out online.',
+                'hero.subtitle': 'Business Website Specialist',
+                'hero.description': 'I design websites that convert visitors into customers - Your online success starts here!',
                 'hero.cta1': 'Hire Me',
                 'hero.cta2': 'View Projects',
                 'about.title': 'About Me',
-                'about.subtitle': 'Passionate about creating digital solutions that generate real impact',
-                'about.text1': 'Hello! I am Evian, a frontend web developer based in Latin America. I specialize in building modern and optimized websites that help businesses and entrepreneurs establish their online presence.',
+                'about.subtitle': 'Passionate about creating digital solutions with real impact',
+                'about.text1': 'Hello! I am Evian, a business website specialist based in Latin America. I specialize in building modern and optimized websites that help businesses and entrepreneurs establish their online presence.',
                 'about.text2': 'With knowledge in HTML, CSS, JavaScript and practical experience in real projects, I can help you bring your idea to the web with a focus on performance, attractive design and user experience.',
                 'about.text3': 'I work with agile methodologies and constantly stay updated with the latest trends in web development to offer quality solutions.',
                 'about.languages': 'Languages:',
+                'about.lang.spanish': 'Spanish (Native)',
+                'about.lang.english': 'English (Intermediate)',
                 'about.services': 'My Services',
-                'about.service1.title': 'Custom Web Development',
+                'about.service.title': 'Professional Web Development',
+                'about.service.item1': 'High-performance websites',
+                'about.service.item2': 'Responsive mobile design',
+                'about.service.item3': 'SEO optimization included',
+                'about.service.item4': 'Social media integration',
+                'about.service.item5': 'Functional forms',
+                'about.service.item6': 'Personalized consulting',
+                'about.service1.title': 'Professional Web Development',
                 'about.service1.desc': 'Custom websites designed for your specific needs with the latest frontend technologies.',
                 'about.service2.title': 'Responsive Design',
-                'about.service2.desc': 'Webs that perfectly adapt to any device, from mobiles to large screens.',
+                'about.service2.desc': 'Websites that perfectly adapt to any device, from mobiles to large screens.',
                 'about.service3.title': 'Performance Optimization',
                 'about.service3.desc': 'Fast sites that improve user experience and search engine positioning.',
                 'experience.title': 'My Experience',
                 'experience.subtitle': 'My career and featured projects',
                 'experience.job1.title': 'Freelance Web Developer',
                 'experience.job1.company': 'Self-employed',
-                'experience.job1.date': '2022 - Present',
+                'experience.job1.date': '2023 - Present',
                 'experience.job1.desc': 'Development of custom websites for small businesses and entrepreneurs, focused on performance and user experience.',
                 'experience.job2.title': 'Web Development Student',
                 'experience.job2.company': 'Platzi, Udemy, FreeCodeCamp',
@@ -911,6 +983,10 @@
                 'experience.job2.desc': 'Intensive training in frontend web development through online platforms, completing more than 20 courses and certifications.',
                 'skills.title': 'My Skills',
                 'skills.subtitle': 'Technologies I master and regularly use in my projects',
+                'skills.responsive.title': 'Responsive on All Devices',
+                'skills.responsive.desc': 'Is your site not looking good on mobile? 100% responsive solutions',
+                'skills.conversion.title': 'Designs That Sell',
+                'skills.conversion.desc': 'Proven structures to increase conversions',
                 'skills.other.title': 'Other Skills',
                 'skills.other.1': 'Responsive Design',
                 'skills.other.2': 'SEO Optimization',
@@ -919,6 +995,9 @@
                 'skills.other.5': 'Teamwork',
                 'projects.title': 'My Projects',
                 'projects.subtitle': 'Some of my recent work and personal projects',
+                'projects.results.title': 'Results:',
+                'projects.results.sales': '✅ +45% sales',
+                'projects.results.speed': '🚀 2.8x faster',
                 'projects.tip': 'Pro Tip',
                 'projects.project1.title': 'Minimalist Online Store',
                 'projects.project1.tip': '"I implemented a local cart cache system, allowing users not to lose their products even without connection, increasing retention by 15% according to A/B tests"',
@@ -929,10 +1008,10 @@
                 'projects.coming.desc': 'I\'m working on exciting new projects',
                 'testimonials.title': 'Satisfied Clients',
                 'testimonials.subtitle': 'What those who have worked with me say',
-                'testimonials.client1.position': 'Business Owner | Piercings',
-                'testimonials.client1.text': 'Evian\'s work has been very helpful for my business because my clients now have more comfort and confidence with my business 10/10 his services.',
+                'testimonials.client1.position': 'Business Owner',
+                'testimonials.client1.text': '"In 3 weeks Evian transformed our outdated site into a modern platform that brought us 23 new clients in the first month"',
                 'testimonials.client2.position': 'Blogger | Writer',
-                'testimonials.client2.text': 'The programmer did a great job, very good service.',
+                'testimonials.client2.text': '"The programmer did a great job, very good service."',
                 'contact.title': 'Let\'s Work Together',
                 'contact.subtitle': 'Do you have a project in mind? Contact me and let\'s make it happen',
                 'contact.form.title': 'Send Me a Message',
@@ -943,11 +1022,19 @@
                 'contact.info.title': 'Contact Information',
                 'contact.info.email': 'Email',
                 'contact.info.whatsapp': 'WhatsApp',
+                'contact.info.github': 'GitHub',
                 'contact.info.social': 'Follow Me on Social Media',
-                'footer.tagline': 'Frontend Web Developer',
+                'footer.tagline': 'Business Website Specialist',
                 'footer.rights': 'All rights reserved.',
                 'footer.privacy': 'Privacy Policy',
-                'footer.terms': 'Terms of Service'
+                'footer.terms': 'Terms of Service',
+                'footer.cta.title': 'Ready to Boost Your Business?',
+                'footer.cta.button': 'Start Now →',
+                'faq.title': 'Frequently Asked Questions',
+                'faq.time.question': 'How long does it take to make my website?',
+                'faq.time.answer': 'We deliver projects in 10-15 business days from design approval',
+                'faq.maintenance.question': 'Do you offer maintenance?',
+                'faq.maintenance.answer': 'We offer monthly maintenance plans with updates and support'
             }
         };
 
@@ -989,6 +1076,32 @@
         document.addEventListener('DOMContentLoaded', function() {
             const preferredLanguage = localStorage.getItem('preferredLanguage') || 'es';
             changeLanguage(preferredLanguage);
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            let lastScrollY = window.scrollY;
+            
+            window.addEventListener('scroll', function() {
+                const currentScrollY = window.scrollY;
+                
+                // Cambiar apariencia al hacer scroll
+                if (currentScrollY > 50) {
+                    navbar.classList.add('py-2', 'bg-white/95', 'shadow-lg');
+                    navbar.classList.remove('py-3', 'bg-white/90', 'shadow-md');
+                } else {
+                    navbar.classList.add('py-3', 'bg-white/90', 'shadow-md');
+                    navbar.classList.remove('py-2', 'bg-white/95', 'shadow-lg');
+                }
+                
+                // Ocultar navbar al hacer scroll hacia abajo y mostrarla al hacer scroll hacia arriba
+                if (currentScrollY > lastScrollY && currentScrollY > 300) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
+                
+                lastScrollY = currentScrollY;
+            });
             
             // Configurar eventos para los botones de idioma
             document.querySelectorAll('.language-option').forEach(option => {
